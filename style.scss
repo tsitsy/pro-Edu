@@ -208,7 +208,7 @@ button{
     background-color: var(--primary);
     padding: 80px 100px;
     color: #fff;
-    gap: 393px;
+    gap: 363px;
     h2{
         font-size: 45px;
         font-style: normal;
@@ -226,8 +226,9 @@ button{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 528px;
 }
-.register{
+.but{
     padding: 13px 33px;
     width: auto;
     height: auto;
@@ -237,8 +238,8 @@ button{
     font-weight: 600;
     line-height: normal; 
     border-radius: 5px;
-    border: 1px solid var(--primary);
-    background: #fff; 
+    border: 1px solid #fff;
+    background:#fff; 
 }
 .meet{
     margin: 0px 130px 140px;
@@ -307,4 +308,131 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.feedback{
+    display: flex;
+    gap: 24px;
+    margin: 50px 140px;
+    position: relative;
+}
+.sweL{
+    position: absolute;
+    left: -20px;
+    top: 50%;
+}
+.sweR{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--dark3);
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p{
+        color: var(--dark);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+.nameS{
+    display: flex;
+    gap: 20px;
+    h4{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: var(--dark2);
+    }
+    p{
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+}
+.frequently{
+    margin: 130px 364px;
+    .title{
+        padding-bottom: 50px;
+    }
+}
+.compatible{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    border-radius: 5px;
+    border: 1px solid var(--dark3); 
+    
+    p{
+        color: var(--dark2);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+    }
+    .white{
+        background-color: #FFF;
+    }
+   
+}
+.blue{
+    background: rgba(40, 155, 222, 0.10);
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.txt{
+    color: var(--dark);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    padding-inline: 40px;
+}
+.trusted{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    margin-inline: 140px;
+    margin-bottom: 140px;
+}
+.over{
+    h2{
+        color: var(--dark1);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 60px; 
+    }
+}
+.partner{
+    display: flex;
+    justify-content: space-between;
+    gap: 75.33px;
+}
+footer{
+    background-color: #161616;
 }
