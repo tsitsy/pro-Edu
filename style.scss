@@ -100,9 +100,11 @@ nav{
     background-color: rgba(0, 0, 0, 0.20);
     @media (min-width:375px) {
         padding: 80px 20px;
+        background-color: rgba(0, 0, 0, 0.20);
     }
     @media (min-width:1024px) {
         padding: 182px 50px;
+        background-color: rgba(0, 0, 0, 0);
     }
     img{
         display: none;
@@ -612,7 +614,8 @@ button{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 528px;
+        width: 486px;
+        text-align: left;
     }
 }
 .but{
