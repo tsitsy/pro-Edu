@@ -432,6 +432,13 @@ nav{
 }
 }
 .read{
+    width: auto;
+    @media (min-width:375px) {
+        width: 50%;
+    }
+    @media (min-width:1024px) {
+        width: auto;
+    }
     h3{
             font-size: 20px;
             font-style: normal;
@@ -471,7 +478,7 @@ nav{
         }
     }
     p{
-     
+
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
