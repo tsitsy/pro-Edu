@@ -766,6 +766,11 @@ button{
     }
 }
 .avatar{
+    width: auto;
+    @media (min-width:1600px) {
+        width: 25%;
+    }
+    
     .name{
         text-align: center;
         @media (min-width:834px) {
