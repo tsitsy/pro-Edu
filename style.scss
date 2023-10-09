@@ -1,6 +1,10 @@
+@import url('./styles/_nav.scss');
+
 body{
     font-family: 'Poppins', sans-serif;
+    
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -39,6 +43,8 @@ header{
 
 .humb{
     display: block;
+    width: 30px;
+    height: 30px;
     @media (min-width:1600px) {
         display: none;
     }
@@ -48,15 +54,15 @@ nav{
         justify-content: space-between;
         width: 666px;
     }
-    a{
-        display: none;
-        font-size: 18px;
-        text-decoration: none;
-        color:var(--dark) ;
-        @media (min-width:1600px) {
-            display: block;
-        }
-    }
+    // a{
+    //     display: none;
+    //     font-size: 18px;
+    //     text-decoration: none;
+    //     color:var(--dark) ;
+    //     @media (min-width:1600px) {
+    //         display: block;
+    //     }
+    // }
 
 .btn{
     display: none;
