@@ -23,7 +23,20 @@ exitIcon.addEventListener('click', () =>{
     navMobile.classList.remove('active')
 
 })
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.mySwiper1', {
+    modules: [Navigation, Pagination],
+    spaceBetween: 30,
+    effect: "fade",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  const swiper2 = new Swiper('.mySwiper2', {
     modules: [Navigation, Pagination],
     spaceBetween: 30,
     effect: "fade",
