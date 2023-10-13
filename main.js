@@ -40,12 +40,20 @@ const swiper1 = new Swiper('.mySwiper1', {
     modules: [Navigation, Pagination],
     spaceBetween: 30,
     effect: "fade",
+    breakpoints:{
+        1600:{
+            slidesPerView: 2,
+             spaceBetween: 20,
+           
+        }
+    },
+    
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      }
   });
