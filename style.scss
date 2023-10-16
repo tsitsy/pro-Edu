@@ -1159,15 +1159,22 @@ button.accordion {
     line-height: 28px;
 }
   button.accordion:after {
-    font-family: FontAwesome;
-    content: "\f150";
+    content: "";
+    background-image: url("src/images/nextD.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
     font-family: "fontawesome";
-    font-size: 18px;
+    font-size: 24px;
     float: right;
   }
   
   button.accordion.is-open:after {
-    content: "\f151";
+    content: "";
+    background-image: url("src/images/nextU.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
     
   }
   
