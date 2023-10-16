@@ -3,7 +3,9 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';;
+import 'swiper/css/pagination';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 const humberger = document.querySelector('.humb')
 const navMobile = document.querySelector('.nav-mobile')
@@ -57,3 +59,22 @@ const swiper1 = new Swiper('.mySwiper1', {
         clickable: true,
       }
   });
+  const accordionBtns = document.querySelectorAll(".accordion");
+
+accordionBtns.forEach((accordion) => {
+  accordion.onclick = function () {
+    this.classList.toggle("is-open");
+
+    let content = this.nextElementSibling;
+    console.log(content);
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log(content.style.maxHeight);
+    }
+  };
+});

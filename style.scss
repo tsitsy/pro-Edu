@@ -149,13 +149,18 @@ nav{
         display: none;
         @media (min-width:1600px) {
             display: block;
-        }
+            top: 50%;
+            right: 0;
+}
 
     }
     .swiper-button-prev{
         display: none;
         @media (min-width:1600px) {
             display: block;
+            top: 50%;
+            left: 0;
+            
         }
 
     }
@@ -482,14 +487,14 @@ nav{
 }
 }
 .explore{
-    // margin-inline: 20px;
+
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: center;
     background-color: var(--secondary);
     @media (min-width:834px) {
-        // margin-inline: 50px;
+      
         display: flex;
         flex-direction: row;
         gap: 40px;
@@ -497,7 +502,7 @@ nav{
         background-color: var(--secondary);
     }
     @media (min-width:1600px) {
-        // margin-inline: 140px;
+     
         display: flex;
         gap: 60px;
         align-items: center;
@@ -704,12 +709,14 @@ button{
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;  
+        line-height: 24px; 
+        color: #FFF; 
         @media (min-width:834px) {
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            color: #FFF;
         } 
     }
 }
@@ -1118,6 +1125,68 @@ button{
         }
     }
 }
+button.accordion {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 25px 30px;
+    color: var(--Dark-02, #4A4A4A);
+    font-family: Poppins;
+    font-size:14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    border: 1px solid var(--dark3);
+    margin-bottom: 20px;
+    @media (min-width:834px) {
+        font-size: 20px;
+
+    }
+        
+    }
+   
+  
+  p{
+    color: #777;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+  button.accordion:after {
+    font-family: FontAwesome;
+    content: "\f150";
+    font-family: "fontawesome";
+    font-size: 18px;
+    float: right;
+  }
+  
+  button.accordion.is-open:after {
+    content: "\f151";
+    
+  }
+  
+  button.accordion:hover,
+  button.accordion.is-open {
+    background-color:rgba(40, 155, 222, 0.10);
+    border: none;
+  }
+  
+  .accordion-content {
+    background-color: white;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  
 .compatible{
     display: flex;
     justify-content: space-between;
