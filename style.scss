@@ -183,7 +183,7 @@ nav{
     
     @media (min-width:375px) {
         display: block;
-        width: 110%;
+        width: 120%;
         height: auto;
         position: relative;
         z-index: -5;}
@@ -498,11 +498,11 @@ nav{
 }
 .seeMore{
         display: none;
-        padding: 13px 33px;
+        padding: 11px 18px;
         width: auto;
         height: auto;
         color: #fff;
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: normal; 
@@ -1018,11 +1018,11 @@ button{
 }
 .sdt{
     display: block;
-    padding: 13px 33px;
+    padding: 11px 18px;
     width: auto;
     height: auto;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal; 
@@ -1030,6 +1030,7 @@ button{
     border: 1px solid var(--primary);
     background: var(--primary); 
     margin: 0 auto;
+    margin-top: 20px;
 
 @media (min-width:1600px) {
     display: none;
