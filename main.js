@@ -43,7 +43,7 @@ const swiper1 = new Swiper('.mySwiper1', {
     spaceBetween: 30,
     effect: "fade",
     breakpoints:{
-        1600:{
+        1536:{
             slidesPerView: 2,
              spaceBetween: 20,
            
