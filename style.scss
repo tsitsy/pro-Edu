@@ -574,8 +574,16 @@ nav{
         background-color: var(--secondary);
 }
 .ex{
-    width: 100%;
-    @media (min-width:768px) {
+        width: 100%;
+    @media (min-width:768px) {   
+        width: 50%;
+        transform: translateY(-19px);
+        -webkit-transform: translateY(-19px);
+        -moz-transform: translateY(-19px);
+        -ms-transform: translateY(-19px);
+        -o-transform: translateY(-19px);
+    } 
+    @media (min-width:1024px) {
         width: 50%;
         transform: translateY(-19px);
         -webkit-transform: translateY(-19px);
