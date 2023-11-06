@@ -583,14 +583,7 @@ nav{
         -ms-transform: translateY(-19px);
         -o-transform: translateY(-19px);
     } 
-    @media (min-width:1024px) {
-        width: 50%;
-        transform: translateY(-19px);
-        -webkit-transform: translateY(-19px);
-        -moz-transform: translateY(-19px);
-        -ms-transform: translateY(-19px);
-        -o-transform: translateY(-19px);
-    }
+   
     @media (min-width:1536px) {
         width: auto;
         transform: translateY(19px);
