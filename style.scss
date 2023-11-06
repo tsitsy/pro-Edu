@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     padding-inline: 20px;
-    @media (min-width:768px) {
+    @media (min-width:1024px) {
         padding-inline: 50px; 
     }
     @media (min-width:1536px) {
@@ -574,17 +574,16 @@ nav{
         background-color: var(--secondary);
 }
 .ex{
-        width: 100%;
-    @media (min-width:768px) {   
+    width: 100%;
+    @media (min-width:768px) {
         width: 50%;
         transform: translateY(-19px);
         -webkit-transform: translateY(-19px);
         -moz-transform: translateY(-19px);
         -ms-transform: translateY(-19px);
         -o-transform: translateY(-19px);
-    } 
-   
-    @media (min-width:1024px) {
+    }
+    @media (min-width:1536px) {
         width: auto;
         transform: translateY(19px);
         -webkit-transform: translateY(19px);
@@ -596,7 +595,7 @@ nav{
 }
 .read{
     width: auto;
-    padding-inline: 15px;
+    padding-left: 10px;
     padding-bottom: 15px;
     @media (min-width:1024px) {
         width: 50%;
@@ -1030,6 +1029,7 @@ button{
     }
     .title{
         padding-bottom: 30px;
+       padding-inline: 35px;
         @media (min-width:768px) {
             padding-bottom: 50px;
             width: 80%;
@@ -1202,6 +1202,7 @@ button{
     }
     .title{
         padding-bottom: 30px;
+        padding-inline: 35px;
         @media (min-width:768px) {
             padding-bottom: 50px;
             width: 80%;
