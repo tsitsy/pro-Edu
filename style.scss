@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     padding-inline: 20px;
-    @media (min-width:1024px) {
+    @media (min-width:768px) {
         padding-inline: 50px; 
     }
     @media (min-width:1536px) {
@@ -132,6 +132,7 @@ nav{
         display: none;
         @media (min-width:640px) {
             display: block;
+            color: #FFF;
         }
 
     }
@@ -139,6 +140,7 @@ nav{
         display: none;
         @media (min-width:640px) {
             display: block;
+            color: #FFF;
         }
 
   }}
@@ -180,28 +182,36 @@ nav{
         height: auto;
         position: relative;
         z-index: -5;
+        filter: brightness(0.5);
+        -webkit-filter: brightness(0.5);
     
     @media (min-width:640px) {
         display: block;
         width: 125%;
         height: auto;
         position: relative;
-        z-index: -5;}
+        z-index: -5;
+        filter: brightness(0.5);
+        -webkit-filter: brightness(0.5);
+    }
     @media (min-width:1024px) {
         display: block;
         width: 100%;
         height: auto;
         position: relative;
         z-index: -5;
-    }
+        filter: brightness(0.5);
+        -webkit-filter: brightness(0.5);
+}
     @media (min-width:1536px) {
         display: block;
         width: 100%;
         height: auto;
         position: relative;
         z-index: -5;
-        
-    }
+        filter: brightness(1);
+        -webkit-filter: brightness(1);
+}
     
 
   }
@@ -598,7 +608,7 @@ nav{
     padding-left: 10px;
     padding-bottom: 15px;
     @media (min-width:768px) {
-        width: 50%;
+        width: 44%;
         padding-left: 0px;
         padding-bottom: 0px;
     }
@@ -1226,7 +1236,7 @@ button.accordion {
     border: none;
     outline: none;
     text-align: left;
-    padding: 10px 15px;
+    padding: 19px 15px;
     color: var(--Dark-02, #4A4A4A);
     font-family: Poppins;
     font-size:14px;
