@@ -150,24 +150,49 @@ nav{
     height: 350px;
     .swiper-button-next{
         display: none;
-        @media (min-width:1536px) {
-            display: block;
-            top: 50%;
-            right: 0;
+        &::after{
+            content: '';
         }
+        @media (min-width:1536px) {
+           display: block;
+           top: 50%;
+           right: 0;
+           width: 40px;
+           height: 40px;
+           background-color: #289BDE;
+           border-radius: 50%;
+           -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+           -ms-border-radius: 50%;
+           -o-border-radius: 50%;
+}
 
     }
     .swiper-button-prev{
         display: none;
+        &::after{
+            content: '';
+        }
         @media (min-width:1536px) {
             display: block;
             top: 50%;
             left: 0;
+            width: 40px;
+            height: 40px;
+            background-color: #289BDE;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
         }
 
     }
 
   }
+//   .btnNext{
+//     width: 30px;
+//   }
 
   .swiper-slide {
     background-position: center;
@@ -1265,6 +1290,7 @@ button.accordion {
     font-weight: 400;
     line-height: 28px;
 }
+
   button.accordion:after {
     content: "";
     background-image: url("src/images/nextD.png");
@@ -1273,6 +1299,10 @@ button.accordion {
     height: 20px;
     font-family: "fontawesome";
     float: right;
+    @media (min-width:640px) {
+        margin-top: 11px;  
+    }
+   
   }
   
   button.accordion.is-open:after {
