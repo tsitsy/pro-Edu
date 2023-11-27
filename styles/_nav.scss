@@ -31,7 +31,7 @@ $total-items: 6;
         width: 100vw;
         left: 0;
         height: 100vh;
-        background-color: #fff;
+        background-color: var(--primary);
         position: fixed;
         align-items: flex-start;
         top: 0;
@@ -52,7 +52,7 @@ $total-items: 6;
   @-webkit-keyframes fadeIn {
     0% {
       opacity: 0;
-      top: 200px;
+      top: 400px;
     }
     75% {
       opacity: 0.5;
@@ -75,7 +75,7 @@ $total-items: 6;
     animation: fadeIn 0.5s linear;
     animation-fill-mode: both;
     width: 200px;
-   
+   color: #fff;
 }
 
 a:active{
@@ -86,7 +86,7 @@ a:active{
     
 .nav{
     list-style: none;
-    font-size: 36px;
+    font-size: 46px;
     :active{
         text-decoration: underline;
         background-color: var(--primary);
