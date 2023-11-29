@@ -7,24 +7,20 @@ import 'swiper/css/pagination';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const humberger = document.querySelector('.humb')
-const navMobile = document.querySelector('.nav-mobile')
-const exitIcon = document.querySelector('.exit')
+var icon = document.getElementById("icon");
+var icon1 = document.getElementById("a");
+var icon2 = document.getElementById("b");
+var icon3 = document.getElementById("c");
+var nav = document.getElementById('nav');
+var blue = document.getElementById("blue");
 
-humberger.addEventListener('click', () => {
-
-    navMobile.classList.toggle('active')
-})
-
-window.addEventListener('resize', (e) => {
-    if(e.target.innerWidth > 1600) {
-        navMobile.classList.remove('active')
-    }
-})
-exitIcon.addEventListener('click', () =>{
-    navMobile.classList.remove('active')
-
-})
+icon.addEventListener('click', function() {
+  icon1.classList.toggle('a');
+  icon2.classList.toggle('c');
+  icon3.classList.toggle('b');
+  nav.classList.toggle('show');
+  blue.classList.toggle('slide');
+});
 const swiper1 = new Swiper('.mySwiper1', {
     modules: [Navigation, Pagination],
     spaceBetween: 30,
@@ -45,7 +41,7 @@ const swiper1 = new Swiper('.mySwiper1', {
     breakpoints:{
         1536:{
             slidesPerView: 2,
-             spaceBetween: 20,
+             spaceBetween: 10,
            
         }
     },
