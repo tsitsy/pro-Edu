@@ -13,6 +13,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "accordion-js": "^3.3.4",
     "swiper": "^10.3.1"
   }

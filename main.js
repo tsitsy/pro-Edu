@@ -6,6 +6,21 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import '@splidejs/splide/css';
+import { Splide } from '@splidejs/splide'
+
+var splide = new Splide('.splide', {
+  // type: 'loop',
+  perPage: 2,
+  breakpoints: {
+    1536: {
+      perPage: 1,
+
+    },
+  focus: 'left',
+  }
+});
+splide.mount();
 
 var icon = document.getElementById("icon");
 var icon1 = document.getElementById("a");
@@ -34,27 +49,27 @@ const swiper1 = new Swiper('.mySwiper1', {
       clickable: true,
     },
   });
-  const swiper2 = new Swiper('.mySwiper2', {
-    modules: [Navigation, Pagination],
-    spaceBetween: 30,
-    effect: "fade",
-    breakpoints:{
-        1536:{
-            slidesPerView: 2,
-             spaceBetween: 10,
+  // const swiper2 = new Swiper('.mySwiper2', {
+  //   modules: [Navigation, Pagination],
+  //   spaceBetween: 30,
+  //   effect: "fade",
+  //   breakpoints:{
+  //       1536:{
+  //           slidesPerView: 2,
+  //            spaceBetween: 10,
            
-        }
-    },
+  //       }
+  //   },
     
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      }
-  });
+  //   navigation: {
+  //       nextEl: ".swiper-button-next",
+  //       prevEl: ".swiper-button-prev",
+  //     },
+  //     pagination: {
+  //       el: ".swiper-pagination",
+  //       clickable: true,
+  //     }
+  // });
   const accordionBtns = document.querySelectorAll(".accordion");
 
 accordionBtns.forEach((accordion) => {

@@ -1,5 +1,6 @@
 @import url('./styles/_nav.scss');
 
+
 body{
     font-family: 'Poppins', sans-serif;
     padding-inline: 20px;
@@ -154,9 +155,10 @@ nav{
             content: '';
         }
         @media (min-width:1536px) {
+           position: absolute;
            display: block;
            top: 50%;
-           right: -12px;
+           right: 0px;
            width: 40px;
            height: 40px;
            background-color: #289BDE;
@@ -174,9 +176,10 @@ nav{
             content: '';
         }
         @media (min-width:1536px) {
+            position: absolute;
             display: block;
             top: 50%;
-            left: -12px;
+            left: 0px;
             width: 40px;
             height: 40px;
             background-color: #289BDE;
@@ -1059,6 +1062,7 @@ button{
         display: flex;
         flex-direction: column;
         padding: 0px 0px;
+        position: relative;
     }
     .title{
         padding-bottom: 30px;
@@ -1166,6 +1170,7 @@ button{
         padding: 40px;
         border-radius: 5px;
         border: 1px solid var(--dark3);
+        // width: 40%;
     }
     .icons{
         display: flex;
@@ -1484,5 +1489,35 @@ footer{
             font-weight: 400;
             line-height: 126%;
         }
+    }
+}
+.splide{
+    width: 100%;
+}
+.splide__list{
+    li{
+        padding: 0 10px;
+    }
+   
+}
+.splide__arrow svg {
+    fill: #fff!important;
+    height: 1.2em!important;
+    width: 1.2em!important;
+}
+.splide__arrow--next{
+    display: none!important;
+    right: -5px!important;
+    background-color: var(--primary)!important;
+    @media (min-width:1536px) {
+        display: block!important;
+    }
+}
+.splide__arrow--prev {
+    display: none!important;
+    left: -5px!important;
+    background-color: var(--primary)!important;
+    @media (min-width:1536px) {
+        display: block!important;
     }
 }
