@@ -1278,7 +1278,8 @@ button.accordion {
     @media (min-width:768px) {
         font-size: 20px;
         padding: 25px 30px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        margin-top: 15px;
 
     }
         
@@ -1502,7 +1503,7 @@ footer{
 }
 .splide__arrow svg {
     fill: #fff!important;
-    height: 1.2em!important;
+    height: 40px!important;
     width: 1.2em!important;
 }
 .splide__arrow--next{
