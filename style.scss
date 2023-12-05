@@ -646,7 +646,7 @@ nav{
         width: auto;
         padding-left: 0px;
         padding-bottom: 0px;
-        padding-right: 40px;
+        padding-right: 35px;
     }
     h3{
             font-size: 20px;
@@ -879,7 +879,7 @@ button{
         width: auto;
         height: auto;
         color: var(--primary);
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: normal; 
@@ -889,6 +889,7 @@ button{
     }
     @media (min-width:1536px) {
         display: none;
+        font-size: 20px;
     }
    
 }
