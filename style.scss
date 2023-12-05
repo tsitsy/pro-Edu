@@ -646,7 +646,7 @@ nav{
         width: auto;
         padding-left: 0px;
         padding-bottom: 0px;
-        padding-right: 35px;
+       
     }
     h3{
             font-size: 20px;
@@ -655,6 +655,15 @@ nav{
             line-height: normal;
             color: var(--dark1);
             margin-bottom: 10px;
+        @media (min-width:768px) {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: var(--dark1);
+            margin-bottom: 10px;
+        }
+
         @media (min-width:1024px) {
             font-size: 30px;
         }
